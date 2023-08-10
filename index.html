@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="taskManager">
+        <header class="card">
+          <h1 class="tool">Project Management Tool</h1>
+          <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Add a task...">
+            <textarea id="taskDescription" placeholder="Project description..."></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          
+        </header>
+      
+        <section id="taskContainer"></section>
+    </section>
+    <div class="confirm">
+        <h1>Confirm your action</h1>
+        <p>Are you <strong>really</strong> sure, want to delete this task?</p>
+        <button class="cancel">Cancel</button>
+        <button autofocus class="confirmed">Confirm</button>
+    </div>
+    <section class="chat">
+        <header class="chat-card">
+            <h2>Chat</h2>
+        </header>
+        <div class="chat-container" id="chatContainer">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="chatForm">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
